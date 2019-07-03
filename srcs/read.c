@@ -6,27 +6,27 @@
 /*   By: vzhao <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 11:35:33 by vzhao             #+#    #+#             */
-/*   Updated: 2019/06/08 18:49:40 by vzhao            ###   ########.fr       */
+/*   Updated: 2019/06/08 16:20:17 by vzhao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 #include "libft.h"
 
-int			check_sides(char *str, int i)
+int			check_sum(char *s, int i)
 {
-	int total;
+	int sum;
 
-	total = 0;
-	if (str[i - 1] == '#' && i > 0)
-		total++;
-	if (str[i + 1] == '#' && i + 1 < 20)
-		total++;
-	if (str[i - 5] == '#' && i >= 5)
-		total++;
-	if (str[i + 5] == '#' && i + 5 < 20)
-		total++;
-	return (total);
+	sum = 0;
+	if (s[i - 5] == '#' && i >= 5)
+		sum++;
+	if (s[i + 5] == '#' && i + 5 < 20)
+		sum++;
+	if (s[i - 1] == '#' && i > 0)
+		sum++;
+	if (s[i + 1] == '#' && i + 1 < 20)
+		sum++;
+	return (sum);
 }
 
 /*
@@ -54,7 +54,7 @@ int			check_input(char *str, char newline_c, char width_c, char block_c)
 		{
 			ERROR(!(str[i] == '#' || str[i] == '.'));
 			block_c += (str[i] == '#') ? 1 : 0;
-			total += (str[i] == '#') ? check_sides(str, i) : 0;
+			total += (str[i] == '#') ? check_sum(str, i) : 0;
 			width_c++;
 		}
 	}

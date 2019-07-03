@@ -6,14 +6,12 @@
 /*   By: jiliu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 14:13:17 by jiliu             #+#    #+#             */
-/*   Updated: 2019/06/08 18:45:09 by vzhao            ###   ########.fr       */
+/*   Updated: 2019/07/03 12:36:56 by vzhao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "fillit.h"
-#include "../libft/libft.h"
+#include "libft.h"
 
 char	*boardsize(size_t b)
 {

@@ -6,7 +6,7 @@
 /*   By: jiliu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 15:31:23 by jiliu             #+#    #+#             */
-/*   Updated: 2019/06/08 18:50:45 by vzhao            ###   ########.fr       */
+/*   Updated: 2019/07/03 12:36:42 by vzhao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,6 @@ char	*fillboard(t_list *tetris, size_t p)
 	return (board);
 }
 
-void	print_usage(void)
-{
-	write(1, "1", 1);	
-}
-
 int		main(int ac, char **av)
 {
 	int		fd;
@@ -63,6 +58,6 @@ int		main(int ac, char **av)
 		ft_freelist(head);
 	}
 	else
-		print_usage();
+		ft_putstr("usage: ./fillit source_file\n");
 	return (0);
 }
