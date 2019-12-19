@@ -3,11 +3,14 @@
 
 ### Table Of Contents
 * [Objective](#objective)
-* [Understanding the program](#understanding-the-program)
+* [Understanding the Program](#understanding-the-program)
 * [Usage](#usage)
+* [References](#references)
 
 # Objective
 
-# Understanding the program
+# Understanding the Program
 
 # Usage
+
+# References 
