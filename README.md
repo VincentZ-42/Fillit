@@ -3,7 +3,7 @@
 
 ### Table Of Contents
 * [Objective](#objective)
-* [Understanding the program](#Understanding the program)
+* [Understanding the program](#understandingtheprogram)
 * [Usage](#usage)
 
 # Objective
