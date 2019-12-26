@@ -8,8 +8,12 @@
 * [References](#references)
 
 # Objective
+* To arrange Tetris pieces with each other to make the smallest possible square
+* Learn how use recursive backtracking algorithm
+* Learn how to manage memory in a program and parse a file to read inputs 
 
 # Understanding the Program
+
 
 # Usage
 
