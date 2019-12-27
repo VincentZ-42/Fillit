@@ -32,7 +32,7 @@ The input is a file that contains a list of Tetris pieces. Every Tetris piece fi
 The smallest assembled square of Tetris pieces will be produced on the standard output, with letters A - Z representing the order of the Tetris pieces placed on the board.
 * Because there are only 26 letters in the alphabet, we limit the list of Tetris pieces to 26 when reading the input file.
 
-<img align="right" width="1000" alt="Screen Shot 2019-12-26 at 4 51 15 PM" src="https://user-images.githubusercontent.com/49771001/71494971-11aec980-2800-11ea-910a-6e00ef5a6683.png">
+<img align="right" width="225" alt="Screen Shot 2019-12-26 at 4 51 15 PM" src="https://user-images.githubusercontent.com/49771001/71494971-11aec980-2800-11ea-910a-6e00ef5a6683.png">
 
 # Usage
 1. Open Terminal and clone Repository into desired location
