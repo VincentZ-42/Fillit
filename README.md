@@ -37,8 +37,8 @@ The smallest assembled square of Tetris pieces will be produced on the standard 
 * Because there are only 26 letters in the alphabet, the list of Tetris pieces is limited to 26 when reading the input file.
 
 # Usage
+*Please ensure you have gcc compiler and that you are using a Unix/Linux terminal*
 1. Open Terminal and clone Repository into desired location
-  * Please ensure you have gcc compiler and that you are using a Unix/Linux terminal
 2. Type "make" in the command line to create the executable program called "fillit"
 3. Run the executable by typing "./fillit file" where file is the text file containing the list of Tetris pieces 
 
