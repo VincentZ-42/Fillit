@@ -35,6 +35,7 @@ The input is a file that contains a list of Tetris pieces. Every Tetris piece fi
 The smallest assembled square of Tetris pieces will be produced on the standard output, with letters A - Z representing the order of the Tetris pieces in the list and placed on the board.
 
 * Because there are only 26 letters in the alphabet, the list of Tetris pieces is limited to 26 when reading the input file.
+* Please refer to the example to the right
 
 # Usage
 *Please ensure you have gcc compiler and that you are using a Unix/Linux terminal*
