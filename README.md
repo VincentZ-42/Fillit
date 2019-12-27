@@ -28,12 +28,13 @@ The input is a file that contains a list of Tetris pieces. Every Tetris piece fi
 <p align="center">
  <img width="694" alt="Screen Shot 2019-12-26 at 4 24 10 PM" src="https://user-images.githubusercontent.com/49771001/71494442-30ab5c80-27fc-11ea-9c06-5c7a86cfbddb.png">
 
-<img align="right" width="225" alt="Screen Shot 2019-12-26 at 4 51 15 PM" src="https://user-images.githubusercontent.com/49771001/71494971-11aec980-2800-11ea-910a-6e00ef5a6683.png">
-
 ## Output
 
+<img align="right" width="225" alt="Screen Shot 2019-12-26 at 4 51 15 PM" src="https://user-images.githubusercontent.com/49771001/71494971-11aec980-2800-11ea-910a-6e00ef5a6683.png">
+
 The smallest assembled square of Tetris pieces will be produced on the standard output, with letters A - Z representing the order of the Tetris pieces in the list and placed on the board.
-* Because there are only 26 letters in the alphabet, we limit the list of Tetris pieces to 26 when reading the input file.
+
+* Because there are only 26 letters in the alphabet, the list of Tetris pieces is limited to 26 when reading the input file.
 
 # Usage
 1. Open Terminal and clone Repository into desired location
