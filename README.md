@@ -17,8 +17,8 @@
 * Learn how to manage memory in a program and parse a file to read inputs 
 
 # Understanding the Program
-## Input
-* The input is a file that contains a list of Tetris pieces. Every Tetris piece fits in a 4x4 chars square and all Tetris pieces are separated by a newline each. Each Tetris piece follows the below 4 rules:
+## *Input*
+The input is a file that contains a list of Tetris pieces. Every Tetris piece fits in a 4x4 chars square and all Tetris pieces are separated by a newline each. Each Tetris piece follows the four rules below:
   * Each Tetris piece is precisely 4 lines of 4 characters, each followed by a new line (4x4 square)
   * A Tetris piece is composed of 4 blocks.
   * Each character must be either a block character (#) or an empty character (.)
