@@ -43,3 +43,5 @@ The smallest assembled square of Tetris pieces will be produced on the standard 
 3. Run the executable by typing "./fillit file" where file is the text file containing the list of Tetris pieces 
 
 # References 
+* Jinyu Liu (Partner for this project)
+* [Medium blog by Beth Locke](https://medium.com/@bethnenniger/fillit-solving-for-the-smallest-square-of-tetrominos-c6316004f909)
