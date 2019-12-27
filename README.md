@@ -24,7 +24,8 @@
   * Each character must be either a block character (#) or an empty character (.)
   * Each block of a Tetris piece must touch at least one other block on any of its 4 sides (up, down, left, and right)
   
-<img align="center" width="694" alt="Screen Shot 2019-12-26 at 4 24 10 PM" src="https://user-images.githubusercontent.com/49771001/71494442-30ab5c80-27fc-11ea-9c06-5c7a86cfbddb.png">
+<p align="center">
+ <img width="694" alt="Screen Shot 2019-12-26 at 4 24 10 PM" src="https://user-images.githubusercontent.com/49771001/71494442-30ab5c80-27fc-11ea-9c06-5c7a86cfbddb.png">
 
 # Usage
 
