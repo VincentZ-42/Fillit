@@ -10,11 +10,13 @@
   * [Input](#input)
   * [Output](#output)
 * [Usage](#usage)
+* [Further Thoughts](#further-thoughts)
 * [References](#references)
 
 # Objective
-* Learn how use recursive backtracking algorithm
-* Learn how to manage memory in a program and parse a file to read inputs 
+* Learn about string manipulation (string parsing from reading a file) and memory management
+* Learn how to use and traverse a linked list (data structure)
+* Learn how implement recursive backtracking algorithm
 
 # Understanding the Program
 ## Input
@@ -41,6 +43,9 @@ The smallest assembled square of Tetris pieces will be produced on the standard 
 1. Open Terminal and clone Repository into desired location
 2. Type "make" in the command line to create the executable program called "fillit"
 3. Run the executable by typing "./fillit file" where file is the text file containing the list of Tetris pieces 
+
+# Further Thoughts
+* Program can be further optimized by storing each Tetris piece as bits instead of an integer array in our data structure
 
 # References 
 * Jinyu Liu (Partner for this project)
