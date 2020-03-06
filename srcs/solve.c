@@ -3,48 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   solve.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jiliu <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: vzhao <vzhao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 14:13:17 by jiliu             #+#    #+#             */
-/*   Updated: 2019/07/03 12:36:56 by vzhao            ###   ########.fr       */
+/*   Updated: 2020/03/05 17:13:14 by vzhao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 #include "libft.h"
 
-char	*boardsize(size_t b)
-{
-	char	*board;
-	size_t	i;
-	size_t	x;
-	int		j;
-
-	x = b;
-	i = b * (b + 1);
-	board = (char*)malloc(sizeof(char) * (i + 1));
-	board[i] = '\0';
-	j = i - 2;
-	while (j >= 0)
-	{
-		board[j] = '.';
-		j--;
-	}
-	board[0] = '.';
-	while (x < i)
-	{
-		board[x] = '\n';
-		x += (b + 1);
-	}
-	return (board);
-}
-
 /*
-** This moves the piece to the top left hand corner of the board and
-** scales it to the size of the board.
-** x[i] and y[i] are the coordinates of the piece's location in the board,
-** obtained by % / / the coordinates of the piece respectively by 5
-** , which accounts for the \n each row.
+mvpiece
+	- Function that converts the tetris piece's coordinates from a 5x5 board
+	and scales its coordinates to match the boardsize
+	- x[i] and y[i] are the coordinates of the piece's location in the board
+	obtained by % the coordinates of the piece by 5
+Args:
+	t_list *tetris = pointer to node containing tetris piece
+	int b = boardsize dimension
+	int xmin = minimum starting value of where piece can be placed
+	int st = start of current index on the board
+Returns:
+	int *temp = int array containing newly scaled boardsize
 */
 
 int		*mvpiece(t_list *tetris, int b, int xmin, int st)
@@ -74,6 +55,18 @@ int		*mvpiece(t_list *tetris, int b, int xmin, int st)
 	return (temp);
 }
 
+/*
+cvalidity
+	- Function checks if placing the tetris piece onto the board is valid
+Args:
+	int *temp = int array of 4 elements of (#) representing Tetris piece 
+	t_list *tetris = node holding all Tetris piece information
+	char *board = string representing the board which piece is being placed on
+Returns:
+	1 for success
+	0 for failure
+*/
+
 int		cvalidity(int *temp, t_list *tetris, char *board)
 {
 	int	i;
@@ -100,6 +93,17 @@ int		cvalidity(int *temp, t_list *tetris, char *board)
 	return (0);
 }
 
+/*
+rmpiece
+	- Function that removes Tetris piece from the board by replacing
+	the indexes with (.) characters
+Args:
+	int *temp = int array holding indexes of # of Tetris piece
+	char *board = string that is holding Tetris piece that needs to be cleared
+Returns:
+	Nothing, manipulates pointers
+*/
+
 void	rmpiece(int *temp, char *board)
 {
 	int	i;
@@ -112,6 +116,20 @@ void	rmpiece(int *temp, char *board)
 	}
 }
 
+/*
+solve
+	- Function that uses all of hte functions above to perform the 
+	backtracking algorithim
+Args:
+	t_list *tetris = pointed to a node in linked list holding Tetris pieces
+	char *board = string represent our board
+	size_t b = dimension of the board
+	int i = current index of the board
+Returns:
+	0 for failure
+	1 for completely fitting all Tetris pieces onto single board
+*/
+
 int		solve(t_list *tetris, char *board, size_t b, int i)
 {
 	int *temp;
@@ -120,6 +138,8 @@ int		solve(t_list *tetris, char *board, size_t b, int i)
 		return (1);
 	while (board[i])
 	{
+		// This condition is to check if our index is still within
+		// the board range
 		if (i > (int)(b * b + b - 4))
 			return (0);
 		temp = mvpiece(tetris, b, 3, i);
