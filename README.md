@@ -43,7 +43,8 @@ The smallest assembled square of Tetris pieces will be produced on the standard 
 1. Open Terminal and clone Repository into desired location
 2. Type "make" in the command line to create the executable program called "fillit"
 3. Run the executable by typing "./fillit file" where file is the text file containing the list of Tetris pieces 
- * Typing "./fillit input" should give the below result: <img width="53" alt="Screen Shot 2020-03-05 at 5 18 21 PM" src="https://user-images.githubusercontent.com/49771001/76040890-79227d00-5f05-11ea-9348-129b0f0ea0b1.png">
+ * Typing "./fillit input" should give the below result: 
+ <img width="100" alt="Screen Shot 2020-03-05 at 5 18 21 PM" src="https://user-images.githubusercontent.com/49771001/76040890-79227d00-5f05-11ea-9348-129b0f0ea0b1.png">
 
 # Further Thoughts
 * Program can be further optimized by storing each Tetris piece as bits instead of an integer array in our data structure
